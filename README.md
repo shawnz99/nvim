@@ -1,3 +1,3 @@
-# config-nvim
-
-## My neovim config file
+<p align="center">
+# My neovim configuration file 
+</p>
