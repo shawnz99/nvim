@@ -4,7 +4,7 @@
 
 
 ## Basic Setup is 
-    * Settting Things
-    * Plugins
-    * Cursor Highlighting
-    * Keymappings
+    - Settting Things
+    - Plugins
+    - Cursor Highlighting
+    - Keymappings
