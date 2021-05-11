@@ -41,6 +41,8 @@ Plug 'majutsushi/tagbar'
 " Colorscheme 
 Plug 'gruvbox-community/gruvbox'
 
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 
 colorscheme gruvbox
@@ -69,9 +71,4 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-" Autocompleting brackets n such "
-inoremap {<CR> {<CR>}<Esc>ko<tab>
-inoremap [<CR> []<Esc>i
-inoremap (<CR> ()<Esc>i
-inoremap /<CR> /*<space><space>*/<Esc>hhi
 
