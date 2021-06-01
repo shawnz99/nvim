@@ -1,3 +1,5 @@
+" Package manager is vim-plug
+
 
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -32,8 +34,8 @@ noremap <silent> <C-Down> :resize -3<CR>
 " Telescope
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
-"Plug 'nvim-telescope/telescope.nvim'
-"Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
 "Terminal Emulation
 Plug 'vimlab/split-term.vim'
 "Tag bar"
@@ -61,7 +63,7 @@ set cursorline
 " map   ~ map
 let mapleader = " "
 
-"lua require('telescope').setup({defaults = {file_sorter = require('telescope.sorters').get_fzy_sorter}})
+lua require('telescope').setup({defaults = {file_sorter = require('telescope.sorters').get_fzy_sorter}})
 
 " Sidebar Toggle Mappings
 nnoremap <silent> ,; :TagbarToggle<cr> 
@@ -69,9 +71,9 @@ nnoremap <silent> ,; :TagbarToggle<cr>
 
 
 " Find files using telescope command line sugar
-"nnoremap <leader>ff <cmd>Telescope find_files<cr>
-"nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-"nnoremap <leader>fb <cmd>Telescope buffers<cr>
-"nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 
