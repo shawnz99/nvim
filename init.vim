@@ -48,20 +48,25 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
+
 "Terminal Emulation
 Plug 'vimlab/split-term.vim'
+
 "Tag bar"
 Plug 'majutsushi/tagbar'
+
 " Colorscheme 
 Plug 'gruvbox-community/gruvbox'
 
+" Autopairs
 Plug 'jiangmiao/auto-pairs'
+
+" Toolbar
+Plug 'itchyny/lightline.vim'
+
 
 call plug#end()
 
-:set bg=dark
-set termguicolors
-let g:gruvbox_italic=1
 colorscheme gruvbox
 
 " Highlighting line number "
@@ -80,8 +85,6 @@ lua require('telescope').setup({defaults = {file_sorter = require('telescope.sor
 " Sidebar Toggle Mappings
 nnoremap <silent> ,; :TagbarToggle<cr> 
 
-
-
 " Find files using telescope command line sugar
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
@@ -89,3 +92,15 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 
+" STatus Line "
+set laststatus=2
+set noshowmode
+
+if !has('gui_running')
+    set t_Co=256
+endif
+
+" Cholorscheme for sttusl ine
+let g:lightline = {
+            \ 'colorscheme': 'darcula',
+            \}
