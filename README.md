@@ -9,3 +9,5 @@
     - Plugins
     - Cursor Highlighting
     - Keymappings
+
+## Download neovim not from apt
